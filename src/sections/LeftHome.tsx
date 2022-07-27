@@ -1,6 +1,10 @@
 import React from 'react';
+import LittleSections from '../components/LittleSections';
 import BasicInfo from './BasicInfo';
+import Education from './Education';
 import Skills from './Skills';
+import Socials from './Socials';
+import Work from './Work';
 
 const LeftHome = () => {
 	return (
@@ -38,7 +42,63 @@ const LeftHome = () => {
 				<BasicInfo />
 			</div>
 
+			<div className='laptop:hidden'>
+				<Socials />
+			</div>
+
 			<Skills />
+
+			<Work />
+
+			<div className='laptop:hidden'>
+				<Education />
+			</div>
+
+			<div className='laptop:hidden'>
+				<LittleSections
+					title='Personal Values'
+					list={[
+						'Creative',
+						'Innovative',
+						'Curious',
+						'Dedicated',
+						'Responsible',
+					]}
+				/>
+			</div>
+
+			<div className='laptop:hidden'>
+				<LittleSections
+					title='Expertise'
+					list={[
+						'User Experience',
+						'Quality Testing',
+						'Brand Identity',
+						'Web Development',
+						'Website Design',
+					]}
+				/>
+			</div>
+
+			<div className='laptop:hidden'>
+				<LittleSections
+					title='Languages'
+					list={['English', 'Punjabi', 'Hindi', 'Greek']}
+				/>
+			</div>
+
+			<div className='laptop:hidden'>
+				<LittleSections
+					title='Interests'
+					list={[
+						'Coding random funny projects',
+						'Playing Football',
+						'Playing with Linux Operating System',
+						'Studying about Space Exploration',
+						'Making different types of coffee',
+					]}
+				/>
+			</div>
 		</div>
 	);
 };

@@ -20,7 +20,7 @@ const SkillFrame = ({ skill, value }: SkillFrameProps) => {
 						className='h-full bg-rose-500 dark:bg-rose-600 rounded-full'
 					/>
 				</div>
-				<span className='text-zinc-400'>{value}%</span>
+				<span className='text-xs text-zinc-400'>{value}%</span>
 			</div>
 		</div>
 	);
