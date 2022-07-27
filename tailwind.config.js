@@ -1,8 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
 	content: ['./src/**/*.{js,jsx,ts,tsx}'],
-	prefix: 'nyxfor13days-',
-	important: true,
 
 	theme: {
 		screens: {
@@ -11,7 +9,11 @@ module.exports = {
 			laptop: { min: '1024px' },
 			desktop: { min: '1280px' },
 		},
-		extend: {},
+		extend: {
+			fontFamily: {
+				sans: ['Roboto', 'sans-serif'],
+			},
+		},
 	},
 	plugins: [],
 };
