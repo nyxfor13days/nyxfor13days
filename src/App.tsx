@@ -1,7 +1,9 @@
 import React from 'react';
 import { Route, Routes } from 'react-router-dom';
 import Preloader from './components/Preloader';
+import ThemeToggle from './components/ThemeToggle';
 import Home from './routes/Home';
+import { ThemeProvider } from './services/ThemeContext';
 
 const App = () => {
 	const [loading, setLoading] = React.useState(true);
@@ -14,11 +16,15 @@ const App = () => {
 
 	return (
 		<React.Fragment>
-			{loading && <Preloader />}
+			<ThemeProvider>
+				{loading && <Preloader />}
 
-			<Routes>
-				<Route path='/' element={<Home />} />
-			</Routes>
+				<Routes>
+					<Route path='/' element={<Home />} />
+				</Routes>
+
+				<ThemeToggle />
+			</ThemeProvider>
 		</React.Fragment>
 	);
 };
