@@ -4,11 +4,15 @@ module.exports = {
 	darkMode: 'class',
 
 	theme: {
+		container: {
+			center: true,
+			padding: '1rem',
+		},
 		screens: {
 			mobile: { max: '639px' },
 			tablet: { min: '640px' },
 			laptop: { min: '1024px' },
-			desktop: { min: '1280px' },
+			desktop: { min: '1536px' },
 		},
 		extend: {
 			fontFamily: {

@@ -17,11 +17,13 @@ const App = () => {
 	return (
 		<React.Fragment>
 			<ThemeProvider>
-				{loading && <Preloader />}
-
-				<Routes>
-					<Route path='/' element={<Home />} />
-				</Routes>
+				{loading ? (
+					<Preloader />
+				) : (
+					<Routes>
+						<Route path='/' element={<Home />} />
+					</Routes>
+				)}
 
 				<ThemeToggle />
 			</ThemeProvider>

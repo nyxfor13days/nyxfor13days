@@ -11,7 +11,7 @@ const ThemeToggle = () => {
 				onClick={() =>
 					theme === 'dark' ? setTheme('light') : setTheme('dark')
 				}
-				icon={`fas fa-${theme === 'dark' ? 'sun' : 'moon'}`}
+				icon={`fa-solid fa-${theme === 'dark' ? 'sun' : 'moon'}`}
 			/>
 		</div>
 	);
