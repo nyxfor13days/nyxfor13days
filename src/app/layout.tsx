@@ -4,6 +4,7 @@ import "./globals.css";
 import { Poppins } from "next/font/google";
 
 import Provider from "@/components/Provider";
+import { cn } from "@/lib/utils";
 
 const font = Poppins({
   weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
@@ -18,8 +19,10 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
-      <body className={font.className}>
-        <Provider>{children}</Provider>
+      <body className={cn("p-2 min-h-dvh", font.className)}>
+        <Provider>
+          <div className="p-2 min-h-full border-1 border-content4">{children}</div>
+        </Provider>
       </body>
     </html>
   );
