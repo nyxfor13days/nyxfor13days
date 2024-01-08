@@ -1,14 +1,15 @@
 import type { Metadata } from "next";
 import "./globals.css";
 
-import { Poppins } from "next/font/google";
+import { Source_Code_Pro } from "next/font/google";
 import { PropsWithChildren } from "react";
 
+import Header from "@/components/Header";
 import Provider from "@/components/Provider";
 import { cn } from "@/lib/utils";
 
-const font = Poppins({
-  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
+const font = Source_Code_Pro({
+  weight: ["200", "300", "400", "500", "600", "700", "800", "900"],
   subsets: ["latin"],
 });
 
@@ -22,7 +23,13 @@ export default function RootLayout({ children }: PropsWithChildren) {
     <html lang="en">
       <body className={cn("p-2 min-h-dvh", font.className)}>
         <Provider>
-          <div className="p-2 min-h-full border-1 border-content4">{children}</div>
+          <Header />
+
+          <div className="mt-16 p-2 min-h-full grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap- 4 border-1 border-content4">
+            <section className="col-span-1">section 1</section>
+            <section className="col-span-2 h-screen">section 2</section>
+            <section className="col-span-1">section 3</section>
+          </div>
         </Provider>
       </body>
     </html>
