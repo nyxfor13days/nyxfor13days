@@ -2,17 +2,17 @@ export const about = [
   {
     title: "Philosophy",
     description:
-      "My philosophy is to understand the problems of the world, define the problem and find multiple solutions for the problem.",
+      "My philosophy is to understand the problems of the world, define the problem and find multiple solutions for the problem. I believe in the philosophy of manifestation: the process of creating your desired reality through your ideas, beliefs, and intentions. It's about changing your mindset, which then changes your actions.",
   },
   {
     title: "Motivation",
     description:
-      "I am motivated by the challenges I face. A challenge allows me to think more and stay fixated on the challenge itself. Whether I win or lose I am motivated to prove myself everytime.",
+      "I am motivated by the challenges I face. A challenge allows me to think more and stay fixated on the challenge itself. Whether I win or lose, I am motivated to prove myself everytime. External motivation lasts for a short period of time but what motivates a person to infinity is the discipline.",
   },
   {
     title: "Background",
     description:
-      "I have 9 years of personal coding experience and 3 years of professional experience in designing and developing web applications. Recently I have also stepped into the world of android and ios development using flutter.",
+      "I have 9 years of personal coding experience and 3 years of professional experience in designing and developing web applications. Recently I have also stepped into the world of android and ios development using flutter. I have dedicated my life to learning new things and get excited about new opportunities. I have studied about technology, psychology and science. My biggest hobby has been to study about chemistry, physics and biology. Apart from the studies I have a lot of interest in sports and my favourite sports are football and open-wheel racing. Everything in my life comes down to logic and focus.",
   },
 ];
 
