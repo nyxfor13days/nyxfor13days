@@ -12,7 +12,7 @@ export default function Provider({ children }: React.PropsWithChildren) {
     <NextUIProvider navigate={router.push}>
       <ThemeProvider
         attribute="class"
-        defaultTheme="dark"
+        defaultTheme="light"
       >
         {children}
       </ThemeProvider>
