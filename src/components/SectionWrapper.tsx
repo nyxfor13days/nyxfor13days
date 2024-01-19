@@ -12,7 +12,7 @@ export default function SectionWrapper({ title, children }: Props) {
   return (
     <section className={sectionClassNames}>
       <div className="space-y-4">
-        <h2 className="headings">{title}</h2>
+        <h2 className="headings text-xl">{title}</h2>
         <Divider className="lg:hidden" />
       </div>
 
