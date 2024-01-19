@@ -33,7 +33,7 @@ export default function Home() {
               key={index}
               className="grid grid-rows-auto md:grid-cols-3 gap-4"
             >
-              <h3 className="headings">{item.title}</h3>
+              <span className="headings">{item.title}</span>
               <p className="col-span-2">{item.description}</p>
             </div>
           ))}
@@ -49,7 +49,7 @@ export default function Home() {
               key={index}
               className="text-xs md:text-sm lg:text-base"
             >
-              <h3>{item.timeline}</h3>
+              <span>{item.timeline}</span>
               <p className="font-bold uppercase text-pretty">{item.companyName}</p>
               <p>
                 {item.position} - {item.type}
@@ -68,7 +68,7 @@ export default function Home() {
               key={index}
               className="text-xs md:text-sm lg:text-base"
             >
-              <h3>{item.timeline}</h3>
+              <span>{item.timeline}</span>
               <p className="font-bold uppercase text-pretty">{item.institute}</p>
               <p className="ordinal">{item.degree}</p>
             </div>
@@ -85,7 +85,7 @@ export default function Home() {
               key={index}
               className="text-xs md:text-sm lg:text-base"
             >
-              <h3>Issued {item.issued}</h3>
+              <span>Issued {item.issued}</span>
               <p className="font-bold uppercase text-pretty">{item.title}</p>
               <Link
                 isExternal
