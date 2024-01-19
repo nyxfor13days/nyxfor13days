@@ -1,36 +1,41 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<div style="display: flex; flex-direction: column; align-items: stretch; gap: 0.5rem">
 
-## Getting Started
+# 👋 Hello there!
 
-First, run the development server:
+<div style="display: flex; flex-direction: column; gap: 32px">
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+### 🐸 Nyxfor13days &#8482;
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+<p style="font-size: 1rem">
+Meet a skilled and passionate Front-End Engineer from India who is always seeking to expand their knowledge and push boundaries in technology. With a fervor for creating impressive projects and contributing to open-source, this engineer strives to make a positive impact in the industry.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+If you're looking to collaborate on a web or mobile app project, look no further! With a strong background in development and a desire to work with others, this engineer is eager to take on new challenges and create something remarkable. Get in touch on Twitter or LinkedIn to start building something great together!
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+</p>
 
-## Learn More
+</div>
 
-To learn more about Next.js, take a look at the following resources:
+<div>
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+<h3 style="font-size: 1.75rem;">🎵 My Coding Playlist</h3>
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+[![Spotify](https://spotify-github-readme.vercel.app/api/spotify)](https://open.spotify.com/embed/playlist/1ttTnowxuuQIE2qnwI8PEj?utm_source=generator)
 
-## Deploy on Vercel
+</div>
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+<h3 style="font-size: 1.75rem;">💫 My Stats</h3>
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+<div style="display: flex; gap: 1rem">
+
+![Nyxfor13days' GitHub stats](https://github-readme-stats.vercel.app/api?username=nyxfor13days&count_private=true&show_icons=true&theme=onedark)
+
+[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=nyxfor13days&layout=compact&theme=onedark)](https://github.com/nyxfor13days)
+
+</div>
+
+![GitHub followers](https://img.shields.io/github/followers/nyxfor13days?label=Follow%20Me&style=social)
+![Twitter Follow](https://img.shields.io/twitter/follow/nyxfor13days?style=social)
+
+<!-- ![YouTube Channel Subscribers](https://img.shields.io/youtube/channel/subscribers/@nyxfor13days?style=social) -->
+
+</div>
