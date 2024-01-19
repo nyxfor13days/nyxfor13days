@@ -15,7 +15,7 @@ const font = Montserrat({
 });
 
 export const metadata: Metadata = {
-  title: "Harsh Sandhu - UX Designer, Fullstack Developer, Researcher, Strategist and Entrepreneur.",
+  title: "Harsh Sandhu - UX Designer and Fullstack Developer.",
   description: "A UX Designer and Fullstack Developer in daytime and a researchers and entrepreneur in night time.",
 };
 
