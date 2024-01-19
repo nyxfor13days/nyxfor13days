@@ -1,3 +1,26 @@
+export const skills = [
+  {
+    title: "Programming Languages",
+    skills: {
+      fluent: ["TypeScript", "JavaScript", "Python"],
+      learning: ["Dart", "C#"],
+    },
+  },
+  {
+    title: "Frameworks",
+    skills: {
+      fluent: ["NextJS", "React", "Vite", "Flask"],
+      learning: ["Astro", "Django", "Flutter"],
+    },
+  },
+  {
+    title: "Soft Skills",
+    skills: {
+      fluent: ["Leadership", "Teamwork", "Strategic", "Determined"],
+    },
+  },
+];
+
 export const about = [
   {
     title: "Philosophy",
