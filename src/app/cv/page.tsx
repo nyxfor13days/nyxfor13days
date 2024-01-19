@@ -14,7 +14,7 @@ export default function page() {
           href="/"
           color="foreground"
         >
-          <h1 className="text-sm font-bold">Harsh Sandhu</h1>08
+          <h1 className="text-sm font-bold">Harsh Sandhu</h1>
         </Link>
 
         <ToggleTheme />
