@@ -17,6 +17,16 @@ const config: Config = {
     },
     extend: {},
   },
-  plugins: [nextui()],
+  plugins: [
+    nextui({
+      layout: {
+        radius: {
+          small: "0.75rem",
+          medium: "1rem",
+          large: "1.25rem",
+        },
+      },
+    }),
+  ],
 };
 export default config;
