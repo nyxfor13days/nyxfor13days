@@ -1,4 +1,5 @@
 import SectionWrapper from "@/components/SectionWrapper";
+import SocialButtons from "@/components/SocialButtons";
 import ToggleTheme from "@/components/ToggleTheme";
 import { about, certifications, education, experience } from "@/lib/constants";
 import { Divider } from "@nextui-org/divider";
@@ -18,10 +19,12 @@ export default function Home() {
         <ToggleTheme />
       </header>
 
-      <section className="max-w-4xl">
+      <section className="max-w-4xl space-y-4">
         <p className="text-5xl font-bold lowercase">
           UX Designer, Fullstack Developer, Researcher, Strategist and Entrepreneur.
         </p>
+
+        <SocialButtons />
       </section>
 
       <Divider />
