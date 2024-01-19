@@ -11,6 +11,7 @@ export default function SocialButtons() {
       >
         <Button
           isIconOnly
+          size="sm"
           color="primary"
         >
           <LinkedInLogoIcon className="icon" />
@@ -23,6 +24,7 @@ export default function SocialButtons() {
       >
         <Button
           isIconOnly
+          size="sm"
           color="primary"
         >
           <GitHubLogoIcon className="icon" />
@@ -35,6 +37,7 @@ export default function SocialButtons() {
       >
         <Button
           isIconOnly
+          size="sm"
           color="primary"
         >
           <InstagramLogoIcon className="icon" />
