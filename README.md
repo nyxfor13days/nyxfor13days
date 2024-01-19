@@ -17,20 +17,11 @@ If you're looking to collaborate on a web or mobile app project, look no further
 
 <div>
 
-<h3 style="font-size: 1.75rem;">🎵 My Coding Playlist</h3>
-
-[![Spotify](https://spotify-github-readme.vercel.app/api/spotify)](https://open.spotify.com/embed/playlist/1ttTnowxuuQIE2qnwI8PEj?utm_source=generator)
-
 </div>
 
 <h3 style="font-size: 1.75rem;">💫 My Stats</h3>
 
 <div style="display: flex; gap: 1rem">
-
-![Nyxfor13days' GitHub stats](https://github-readme-stats.vercel.app/api?username=nyxfor13days&count_private=true&show_icons=true&theme=onedark)
-
-[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=nyxfor13days&layout=compact&theme=onedark)](https://github.com/nyxfor13days)
-
 </div>
 
 ![GitHub followers](https://img.shields.io/github/followers/nyxfor13days?label=Follow%20Me&style=social)
