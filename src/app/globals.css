@@ -12,4 +12,8 @@
   .headings {
     @apply font-bold lowercase;
   }
+
+  .icon {
+    @apply w-4 h-4;
+  }
 }
