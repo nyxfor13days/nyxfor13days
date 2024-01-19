@@ -7,3 +7,9 @@
     @apply bg-background text-foreground antialiased;
   }
 }
+
+@layer utilities {
+  .headings {
+    @apply font-bold lowercase;
+  }
+}
