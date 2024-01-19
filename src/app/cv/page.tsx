@@ -1,7 +1,7 @@
 import SectionWrapper from "@/components/SectionWrapper";
 import SocialButtons from "@/components/SocialButtons";
 import ToggleTheme from "@/components/ToggleTheme";
-import { about, certifications, education, experience } from "@/lib/constants";
+import { about, certifications, education, experience, skills } from "@/lib/constants";
 import { Divider } from "@nextui-org/divider";
 import { Link } from "@nextui-org/link";
 import { DotFilledIcon } from "@radix-ui/react-icons";
@@ -14,7 +14,7 @@ export default function page() {
           href="/"
           color="foreground"
         >
-          <h1 className="text-sm font-bold">Harsh Sandhu</h1>
+          <h1 className="text-sm font-bold">Harsh Sandhu</h1>08
         </Link>
 
         <ToggleTheme />
@@ -48,16 +48,43 @@ export default function page() {
 
       <SectionWrapper title="Skills">
         <div className="col-span-3 space-y-8">
-          <div className="grid grid-rows-auto md:grid-cols-3 gap-4">
-            <span className="headings">Programming</span>
-            <p className="col-span-2 flex items-center">
-              <span>Fluent in</span>
-              <span className="text-foreground/50 flex items-center">
-                <DotFilledIcon className="icon" />
-                React, Nextjs
-              </span>
-            </p>
-          </div>
+          {skills.map(({ title, skills }, index) => (
+            <div
+              key={index}
+              className="grid grid-rows-auto md:grid-cols-3 gap-4"
+            >
+              <span className="headings">{title}</span>
+
+              <div className="col-span-2">
+                <p className="flex items-center gap-0.5">
+                  <span>Fluent</span>
+                  {skills.fluent.map((skill) => (
+                    <span
+                      key={skill}
+                      className="text-foreground/50 flex items-center"
+                    >
+                      <DotFilledIcon className="icon" />
+                      {skill}
+                    </span>
+                  ))}
+                </p>
+                {skills.learning && (
+                  <p className="flex items-center gap-0.5">
+                    <span>Learning</span>
+                    {skills.learning.map((skill) => (
+                      <span
+                        key={skill}
+                        className="text-foreground/50 flex items-center"
+                      >
+                        <DotFilledIcon className="icon" />
+                        {skill}
+                      </span>
+                    ))}
+                  </p>
+                )}
+              </div>
+            </div>
+          ))}
         </div>
       </SectionWrapper>
 
