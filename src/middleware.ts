@@ -1,11 +1,9 @@
-import { NextResponse } from "next/server";
-
-import type { NextRequest } from "next/server";
+import { NextRequest, NextResponse } from "next/server";
 
 export function middleware(request: NextRequest) {
   return NextResponse.redirect(new URL("/cv", request.url));
 }
 
 export const config = {
-  matcher: "/",
+  matcher: ["/"],
 };
