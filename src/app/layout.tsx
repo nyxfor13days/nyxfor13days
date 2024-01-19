@@ -8,6 +8,7 @@ import Footer from "@/components/Footer";
 import Provider from "@/components/Provider";
 import { cn } from "@/lib/utils";
 import { Divider } from "@nextui-org/divider";
+import { Analytics } from "@vercel/analytics/react";
 
 const font = Montserrat({
   weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
@@ -30,6 +31,7 @@ export default function RootLayout({ children }: Props) {
           <Divider />
           <Footer />
         </Provider>
+        <Analytics />
       </body>
     </html>
   );
