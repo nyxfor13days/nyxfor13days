@@ -1,3 +1,15 @@
+export type NavItemsT = {
+  label: string;
+  url: string;
+};
+
+export const navItems: NavItemsT[] = [
+  { label: "Home", url: "/" },
+  { label: "About", url: "/about" },
+  { label: "Contact", url: "/contact" },
+  { label: "CV", url: "/cv" },
+];
+
 export type SkillsT = {
   title: string;
   skills: {
