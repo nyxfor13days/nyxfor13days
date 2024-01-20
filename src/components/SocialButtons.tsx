@@ -11,10 +11,15 @@ export default function SocialButtons() {
       >
         <Button
           isIconOnly
+          title="social-media-buttons"
+          aria-label="social-media"
+          aria-labelledby="social-media-buttons"
+          role="button"
           size="sm"
           color="primary"
         >
           <LinkedInLogoIcon className="icon" />
+          <span className="sr-only">LinkedIn</span>
         </Button>
       </Link>
 
@@ -24,10 +29,15 @@ export default function SocialButtons() {
       >
         <Button
           isIconOnly
+          title="social-media-buttons"
+          aria-label="social-media"
+          aria-labelledby="social-media-buttons"
+          role="button"
           size="sm"
           color="primary"
         >
           <GitHubLogoIcon className="icon" />
+          <span className="sr-only">GitHub</span>
         </Button>
       </Link>
 
@@ -37,10 +47,15 @@ export default function SocialButtons() {
       >
         <Button
           isIconOnly
+          title="social-media-buttons"
+          aria-label="social-media"
+          aria-labelledby="social-media-buttons"
+          role="button"
           size="sm"
           color="primary"
         >
           <InstagramLogoIcon className="icon" />
+          <span className="sr-only">Instagram</span>
         </Button>
       </Link>
     </div>
