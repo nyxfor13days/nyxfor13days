@@ -55,6 +55,7 @@ export const about: AboutT[] = [
 ];
 
 export type ExperienceT = {
+  id: number;
   companyName: string;
   type: string;
   position: string;
@@ -63,54 +64,63 @@ export type ExperienceT = {
 
 export const experience: ExperienceT[] = [
   {
+    id: 0,
     companyName: "Dhan AI",
     type: "Full-Time",
     position: "Frontend Engineer",
     timeline: "November 2022 - Present",
   },
   {
+    id: 1,
     companyName: "Waterhouse Foundation",
     type: "Full-Time",
     position: "CTO",
     timeline: "May 2022 - Present",
   },
   {
+    id: 2,
     companyName: "Pragyaware Informatics Private Limited",
     type: "Full-Time",
     position: "Frontend Developer",
     timeline: "Feburary 2022 - December 2022",
   },
   {
+    id: 3,
     companyName: "The Vison Studio",
     type: "Self-Employed",
     position: "CEO",
     timeline: "May 2021 - October 2022",
   },
   {
+    id: 4,
     companyName: "CT University",
     type: "Internship",
     position: "Student Ambassador",
     timeline: "Feburary 2022 - July 2022",
   },
   {
+    id: 5,
     companyName: "Whizrobo",
     type: "Internship",
     position: "Trainer",
     timeline: "Feburary 2022 - June 2022",
   },
   {
+    id: 6,
     companyName: "Mindplus Healthcare",
     type: "Freelance",
     position: "Designer",
     timeline: "July 2021 - August 2021",
   },
   {
+    id: 7,
     companyName: "Pragyaware Informatics Private Limited",
     type: "Full-Time",
     position: "Frontend Developer",
     timeline: "June 2020 - June 2021",
   },
   {
+    id: 8,
     companyName: "ZeroAi Technologies Inc",
     type: "Full Time",
     position: "Lead Designer",
@@ -119,6 +129,7 @@ export const experience: ExperienceT[] = [
 ];
 
 export type EducationT = {
+  id: number;
   institute: string;
   degree: string;
   timeline: string;
@@ -126,16 +137,19 @@ export type EducationT = {
 
 export const education: EducationT[] = [
   {
+    id: 0,
     institute: "CT University",
     degree: "Bachelor of Technology (Specialised in Artificial Intelligence)",
     timeline: "2019 - 2022",
   },
   {
+    id: 1,
     institute: "Guru Nanak Dev Polytechnic College",
     degree: "Diploma in Computer Science",
     timeline: "2015 - 2018",
   },
   {
+    id: 2,
     institute: "Jesus Sacred Heart School",
     degree: "10th Grade",
     timeline: "2015",
