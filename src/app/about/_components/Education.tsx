@@ -12,14 +12,18 @@ export default function WorkExperience() {
   ];
 
   return (
-    <Table aria-label="work-experience">
+    <Table
+      isCompact
+      radius="md"
+      aria-label="work-experience"
+    >
       <TableHeader columns={columns}>
         {(column) => <TableColumn key={column.key}>{column.label}</TableColumn>}
       </TableHeader>
 
       <TableBody items={rows}>
         {(row: EducationT) => (
-          <TableRow key={row.institute}>{(columnKey) => <TableCell>{getKeyValue(row, columnKey)}</TableCell>}</TableRow>
+          <TableRow key={row.id}>{(columnKey) => <TableCell>{getKeyValue(row, columnKey)}</TableCell>}</TableRow>
         )}
       </TableBody>
     </Table>
