@@ -34,7 +34,7 @@ export default function page() {
 
       <Divider />
 
-      <SectionWrapper title="Skills">
+      <SectionWrapper title="Languages">
         <div className="col-span-3 space-y-8">
           {skills.map(({ title, skills }, index) => (
             <div
@@ -44,18 +44,20 @@ export default function page() {
               <span className="headings">{title}</span>
 
               <div className="col-span-2">
-                <p className="flex items-center flex-wrap gap-0.5">
-                  <span>Fluent</span>
-                  {skills.fluent.map((skill) => (
-                    <span
-                      key={skill}
-                      className="text-foreground/75 flex items-center"
-                    >
-                      <DotFilledIcon className="icon" />
-                      {skill}
-                    </span>
-                  ))}
-                </p>
+                {skills.fluent && (
+                  <p className="flex items-center flex-wrap gap-0.5">
+                    {skills.learning ? <span>Fluent</span> : <span></span>}
+                    {skills.fluent.map((skill) => (
+                      <span
+                        key={skill}
+                        className="text-foreground/75 flex items-center"
+                      >
+                        <DotFilledIcon className="icon" />
+                        {skill}
+                      </span>
+                    ))}
+                  </p>
+                )}
                 {skills.learning && (
                   <p className="flex items-center flex-wrap gap-0.5">
                     <span>Learning</span>
