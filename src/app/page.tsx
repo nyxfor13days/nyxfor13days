@@ -23,10 +23,9 @@ export default function Home() {
         .
       </p>
 
-      <div className="flex items-center gap-4">
+      <div className="flex items-center gap-6">
         <Link href="/cv">
           <Button
-            size="sm"
             variant="solid"
             color="primary"
           >
@@ -35,7 +34,6 @@ export default function Home() {
         </Link>
         <Link href="/about">
           <Button
-            size="sm"
             variant="solid"
             color="primary"
           >
@@ -44,7 +42,6 @@ export default function Home() {
         </Link>
         <Link href="/contact">
           <Button
-            size="sm"
             variant="solid"
             color="primary"
           >

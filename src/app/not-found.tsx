@@ -15,7 +15,10 @@ export default function NotFound() {
 
       <div className="flex items-center gap-6">
         <Link href="/">
-          <Button variant="solid">
+          <Button
+            variant="solid"
+            color="primary"
+          >
             <span>Go Home</span>
             <ArrowRightIcon className="icon" />
           </Button>
