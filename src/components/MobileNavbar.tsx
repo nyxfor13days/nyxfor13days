@@ -6,11 +6,8 @@ import { HamburgerMenuIcon } from "@radix-ui/react-icons";
 
 export default function MobileNavbar() {
   return (
-    <Popover
-      placement="bottom-start"
-      className="md:hidden"
-    >
-      <PopoverTrigger>
+    <Popover placement="bottom-start">
+      <PopoverTrigger className="md:hidden">
         <Button
           isIconOnly
           variant="light"
