@@ -1,5 +1,7 @@
+import { navItems } from "@/lib/constants";
 import { Link } from "@nextui-org/link";
 
+import MobileNavbar from "./MobileNavbar";
 import ToggleTheme from "./ToggleTheme";
 
 export default function Header() {
@@ -12,7 +14,24 @@ export default function Header() {
         <h1 className="font-bold">Harsh Sandhu</h1>
       </Link>
 
-      <ToggleTheme />
+      <nav className="flex items-center gap-4">
+        <ul className="hidden md:flex items-center gap-4">
+          {navItems.map((item, index) => (
+            <Link
+              key={index}
+              href={item.url}
+              color="foreground"
+              className="text-sm lowercase"
+            >
+              <li>{item.label}</li>
+            </Link>
+          ))}
+        </ul>
+
+        <MobileNavbar />
+
+        <ToggleTheme />
+      </nav>
     </header>
   );
 }
