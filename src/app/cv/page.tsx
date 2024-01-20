@@ -44,12 +44,12 @@ export default function page() {
               <span className="headings">{title}</span>
 
               <div className="col-span-2">
-                <p className="flex items-center gap-0.5">
+                <p className="flex items-center flex-wrap gap-0.5">
                   <span>Fluent</span>
                   {skills.fluent.map((skill) => (
                     <span
                       key={skill}
-                      className="text-foreground/50 flex items-center"
+                      className="text-foreground/75 flex items-center"
                     >
                       <DotFilledIcon className="icon" />
                       {skill}
@@ -57,12 +57,12 @@ export default function page() {
                   ))}
                 </p>
                 {skills.learning && (
-                  <p className="flex items-center gap-0.5">
+                  <p className="flex items-center flex-wrap gap-0.5">
                     <span>Learning</span>
                     {skills.learning.map((skill) => (
                       <span
                         key={skill}
-                        className="text-foreground/50 flex items-center"
+                        className="text-foreground/75 flex items-center"
                       >
                         <DotFilledIcon className="icon" />
                         {skill}
@@ -83,10 +83,10 @@ export default function page() {
           {experience.map((item, index) => (
             <div
               key={index}
-              className="text-xs md:text-sm lg:text-base"
+              className="text-sm lg:text-base"
             >
               <span>{item.timeline}</span>
-              <p className="font-bold uppercase text-pretty">{item.companyName}</p>
+              <p className="text-lg font-bold uppercase text-pretty">{item.companyName}</p>
               <p>
                 {item.position} - {item.type}
               </p>
@@ -102,10 +102,10 @@ export default function page() {
           {education.map((item, index) => (
             <div
               key={index}
-              className="text-xs md:text-sm lg:text-base"
+              className="text-sm lg:text-base"
             >
               <span>{item.timeline}</span>
-              <p className="font-bold uppercase text-pretty">{item.institute}</p>
+              <p className="text-lg font-bold uppercase text-pretty">{item.institute}</p>
               <p className="ordinal">{item.degree}</p>
             </div>
           ))}
@@ -119,16 +119,16 @@ export default function page() {
           {certifications.map((item, index) => (
             <div
               key={index}
-              className="text-xs md:text-sm lg:text-base"
+              className="text-sm lg:text-base"
             >
               <span>Issued {item.issued}</span>
-              <p className="font-bold uppercase text-pretty">{item.title}</p>
+              <p className="text-lg font-bold uppercase text-pretty">{item.title}</p>
               <Link
                 isExternal
                 showAnchorIcon
                 href={item.credentialURL}
                 color="foreground"
-                className="text-xs md:text-sm lg:text-base"
+                className="text-sm lg:text-base"
               >
                 {item.provider}
               </Link>
