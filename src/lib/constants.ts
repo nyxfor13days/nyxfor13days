@@ -1,4 +1,14 @@
-export const skills = [
+export type SkillsT = {
+  title: string;
+  skills:
+    | {
+        fluent?: string[];
+        learning?: string[];
+      }
+    | string[];
+};
+
+export const skills: SkillsT[] = [
   {
     title: "Programming Languages",
     skills: {
@@ -21,7 +31,12 @@ export const skills = [
   },
 ];
 
-export const about = [
+export type AboutT = {
+  title: string;
+  description: string;
+};
+
+export const about: AboutT[] = [
   {
     title: "Philosophy",
     description:
@@ -39,7 +54,14 @@ export const about = [
   },
 ];
 
-export const experience = [
+export type ExperienceT = {
+  companyName: string;
+  type: string;
+  position: string;
+  timeline: string;
+};
+
+export const experience: ExperienceT[] = [
   {
     companyName: "Dhan AI",
     type: "Full-Time",
@@ -96,7 +118,13 @@ export const experience = [
   },
 ];
 
-export const education = [
+export type EductaionT = {
+  institute: string;
+  degree: string;
+  timeline: string;
+};
+
+export const education: EductaionT[] = [
   {
     institute: "CT University",
     degree: "Bachelor of Technology (Specialised in Artificial Intelligence)",
@@ -113,6 +141,13 @@ export const education = [
     timeline: "2015",
   },
 ];
+
+export type CertificationsT = {
+  title: string;
+  issued: string;
+  provider: string;
+  credentialURL: URL;
+};
 
 export const certifications = [
   {
