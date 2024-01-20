@@ -5,6 +5,7 @@ import { Montserrat } from "next/font/google";
 import { PropsWithChildren } from "react";
 
 import Footer from "@/components/Footer";
+import Header from "@/components/Header";
 import Provider from "@/components/Provider";
 import { cn } from "@/lib/utils";
 import { Divider } from "@nextui-org/divider";
@@ -27,6 +28,7 @@ export default function RootLayout({ children }: Props) {
     <html lang="en">
       <body className={cn("container", font.className)}>
         <Provider>
+          <Header />
           {children}
           <Divider />
           <Footer />
