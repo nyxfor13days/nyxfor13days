@@ -1,6 +1,8 @@
 import Link from "next/link";
 
+import { WrenchScrewdriverIcon } from "@heroicons/react/24/outline";
 import { Button } from "@nextui-org/button";
+import { Divider } from "@nextui-org/divider";
 
 export default function Home() {
   return (
@@ -49,6 +51,17 @@ export default function Home() {
             Contact
           </Button>
         </Link>
+      </div>
+
+      <Divider />
+
+      <div className="space-y-2">
+        <h3 className="headings">Recent Posts</h3>
+        <div className="p-4 flex items-center gap-1 bg-content2 text-content2-foreground/75">
+          <WrenchScrewdriverIcon className="icon" />
+          <span className="text-sm lowercase">Blog is still under construction...</span>
+          <WrenchScrewdriverIcon className="icon" />
+        </div>
       </div>
     </main>
   );
