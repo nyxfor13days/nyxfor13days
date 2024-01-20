@@ -4,7 +4,7 @@ import ToggleTheme from "./ToggleTheme";
 
 export default function Header() {
   return (
-    <header className="mt-12 flex items-center justify-between gap-4">
+    <header className="my-12 flex items-center justify-between gap-4">
       <Link
         href="/"
         color="foreground"
