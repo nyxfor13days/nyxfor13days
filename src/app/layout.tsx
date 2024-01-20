@@ -33,7 +33,7 @@ export default function RootLayout({ children }: Props) {
         <Provider>
           <Header />
           <Divider />
-          <div className="py-12">{children}</div>
+          <div className="relative py-12 min-h-[calc(100dvh-156px)]">{children}</div>
           <Divider />
           <Footer />
         </Provider>
