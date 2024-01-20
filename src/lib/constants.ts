@@ -118,13 +118,13 @@ export const experience: ExperienceT[] = [
   },
 ];
 
-export type EductaionT = {
+export type EducationT = {
   institute: string;
   degree: string;
   timeline: string;
 };
 
-export const education: EductaionT[] = [
+export const education: EducationT[] = [
   {
     institute: "CT University",
     degree: "Bachelor of Technology (Specialised in Artificial Intelligence)",
