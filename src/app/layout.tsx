@@ -29,7 +29,8 @@ export default function RootLayout({ children }: Props) {
       <body className={cn("container", font.className)}>
         <Provider>
           <Header />
-          {children}
+          <Divider />
+          <div className="py-12">{children}</div>
           <Divider />
           <Footer />
         </Provider>
