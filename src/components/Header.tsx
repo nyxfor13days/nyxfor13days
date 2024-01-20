@@ -9,7 +9,7 @@ export default function Header() {
         href="/"
         color="foreground"
       >
-        <h1 className="text-sm font-bold">Harsh Sandhu</h1>
+        <h1 className="font-bold">Harsh Sandhu</h1>
       </Link>
 
       <ToggleTheme />

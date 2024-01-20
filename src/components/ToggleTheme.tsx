@@ -24,7 +24,6 @@ export default function ToggleTheme() {
   return (
     <Button
       isIconOnly
-      size="sm"
       variant="light"
       onClick={handleTheme}
     >
