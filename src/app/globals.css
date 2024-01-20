@@ -14,7 +14,7 @@
 
 @layer utilities {
   .headings {
-    @apply font-bold lowercase;
+    @apply text-lg font-bold lowercase;
   }
 
   .icon {
