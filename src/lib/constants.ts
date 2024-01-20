@@ -1,11 +1,9 @@
 export type SkillsT = {
   title: string;
-  skills:
-    | {
-        fluent?: string[];
-        learning?: string[];
-      }
-    | string[];
+  skills: {
+    fluent?: string[];
+    learning?: string[];
+  };
 };
 
 export const skills: SkillsT[] = [
@@ -20,13 +18,7 @@ export const skills: SkillsT[] = [
     title: "Frameworks",
     skills: {
       fluent: ["NextJS", "React", "Vite", "Flask"],
-      learning: ["Astro", "Django", "Flutter"],
-    },
-  },
-  {
-    title: "Soft Skills",
-    skills: {
-      fluent: ["Leadership", "Teamwork", "Strategic", "Determined"],
+      learning: ["Astro", "Django", "Flutter", "Angular"],
     },
   },
 ];
