@@ -19,6 +19,9 @@ const font = Montserrat({
 export const metadata: Metadata = {
   title: "Harsh Sandhu - UX Designer and Fullstack Developer.",
   description: "A UX Designer and Fullstack Developer in daytime and a researchers and entrepreneur in night time.",
+  applicationName: "Harsh Sandhu - UX Designer and Fullstack Developer.",
+  keywords: ["Frontend", "Fullstack", "Developer", "User Experience", "Researcher", "Portfolio", "nyxfor13days"],
+  creator: "Harsh Sandhu",
 };
 
 interface Props extends PropsWithChildren {}
