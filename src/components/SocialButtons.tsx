@@ -4,7 +4,7 @@ import { GitHubLogoIcon, InstagramLogoIcon, LinkedInLogoIcon } from "@radix-ui/r
 
 export default function SocialButtons() {
   return (
-    <div className="flex items-center gap-4">
+    <div className="flex items-center gap-8">
       <Link
         isExternal
         href="https://www.linkedin.com/in/nyxfor13days"

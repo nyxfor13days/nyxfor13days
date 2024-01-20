@@ -5,6 +5,7 @@ import { Montserrat } from "next/font/google";
 import { PropsWithChildren } from "react";
 
 import Footer from "@/components/Footer";
+import Header from "@/components/Header";
 import Provider from "@/components/Provider";
 import { cn } from "@/lib/utils";
 import { Divider } from "@nextui-org/divider";
@@ -18,6 +19,9 @@ const font = Montserrat({
 export const metadata: Metadata = {
   title: "Harsh Sandhu - UX Designer and Fullstack Developer.",
   description: "A UX Designer and Fullstack Developer in daytime and a researchers and entrepreneur in night time.",
+  applicationName: "Harsh Sandhu - UX Designer and Fullstack Developer.",
+  keywords: ["Frontend", "Fullstack", "Developer", "User Experience", "Researcher", "Portfolio", "nyxfor13days"],
+  creator: "Harsh Sandhu",
 };
 
 interface Props extends PropsWithChildren {}
@@ -27,7 +31,9 @@ export default function RootLayout({ children }: Props) {
     <html lang="en">
       <body className={cn("container", font.className)}>
         <Provider>
-          {children}
+          <Header />
+          <Divider />
+          <div className="relative py-12 min-h-[calc(100dvh-163px)]">{children}</div>
           <Divider />
           <Footer />
         </Provider>

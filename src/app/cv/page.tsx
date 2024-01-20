@@ -1,6 +1,5 @@
 import SectionWrapper from "@/components/SectionWrapper";
 import SocialButtons from "@/components/SocialButtons";
-import ToggleTheme from "@/components/ToggleTheme";
 import { about, certifications, education, experience, skills } from "@/lib/constants";
 import { Divider } from "@nextui-org/divider";
 import { Link } from "@nextui-org/link";
@@ -9,17 +8,6 @@ import { DotFilledIcon } from "@radix-ui/react-icons";
 export default function page() {
   return (
     <main className="space-y-12">
-      <header className="mt-12 flex items-center justify-between gap-4">
-        <Link
-          href="/"
-          color="foreground"
-        >
-          <h1 className="text-sm font-bold">Harsh Sandhu</h1>
-        </Link>
-
-        <ToggleTheme />
-      </header>
-
       <section className="max-w-4xl space-y-4">
         <p className="text-5xl font-bold lowercase">
           UX Designer, Fullstack Developer, Researcher, Strategist and Entrepreneur.
