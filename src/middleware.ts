@@ -1,8 +1,6 @@
-import { NextRequest, NextResponse } from "next/server";
+import { NextRequest } from "next/server";
 
-export function middleware(request: NextRequest) {
-  return NextResponse.redirect(new URL("/cv", request.url));
-}
+export function middleware(request: NextRequest) {}
 
 export const config = {
   matcher: ["/"],

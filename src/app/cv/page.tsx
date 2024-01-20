@@ -1,6 +1,5 @@
 import SectionWrapper from "@/components/SectionWrapper";
 import SocialButtons from "@/components/SocialButtons";
-import ToggleTheme from "@/components/ToggleTheme";
 import { about, certifications, education, experience, skills } from "@/lib/constants";
 import { Divider } from "@nextui-org/divider";
 import { Link } from "@nextui-org/link";
@@ -9,17 +8,6 @@ import { DotFilledIcon } from "@radix-ui/react-icons";
 export default function page() {
   return (
     <main className="space-y-12">
-      <header className="mt-12 flex items-center justify-between gap-4">
-        <Link
-          href="/"
-          color="foreground"
-        >
-          <h1 className="text-sm font-bold">Harsh Sandhu</h1>
-        </Link>
-
-        <ToggleTheme />
-      </header>
-
       <section className="max-w-4xl space-y-4">
         <p className="text-5xl font-bold lowercase">
           UX Designer, Fullstack Developer, Researcher, Strategist and Entrepreneur.
@@ -46,7 +34,7 @@ export default function page() {
 
       <Divider />
 
-      <SectionWrapper title="Skills">
+      <SectionWrapper title="Languages">
         <div className="col-span-3 space-y-8">
           {skills.map(({ title, skills }, index) => (
             <div
@@ -56,25 +44,27 @@ export default function page() {
               <span className="headings">{title}</span>
 
               <div className="col-span-2">
-                <p className="flex items-center gap-0.5">
-                  <span>Fluent</span>
-                  {skills.fluent.map((skill) => (
-                    <span
-                      key={skill}
-                      className="text-foreground/50 flex items-center"
-                    >
-                      <DotFilledIcon className="icon" />
-                      {skill}
-                    </span>
-                  ))}
-                </p>
+                {skills.fluent && (
+                  <p className="flex items-center flex-wrap gap-0.5">
+                    {skills.learning ? <span>Fluent</span> : <span></span>}
+                    {skills.fluent.map((skill) => (
+                      <span
+                        key={skill}
+                        className="text-foreground/75 flex items-center"
+                      >
+                        <DotFilledIcon className="icon" />
+                        {skill}
+                      </span>
+                    ))}
+                  </p>
+                )}
                 {skills.learning && (
-                  <p className="flex items-center gap-0.5">
+                  <p className="flex items-center flex-wrap gap-0.5">
                     <span>Learning</span>
                     {skills.learning.map((skill) => (
                       <span
                         key={skill}
-                        className="text-foreground/50 flex items-center"
+                        className="text-foreground/75 flex items-center"
                       >
                         <DotFilledIcon className="icon" />
                         {skill}
@@ -95,10 +85,10 @@ export default function page() {
           {experience.map((item, index) => (
             <div
               key={index}
-              className="text-xs md:text-sm lg:text-base"
+              className="text-sm lg:text-base"
             >
               <span>{item.timeline}</span>
-              <p className="font-bold uppercase text-pretty">{item.companyName}</p>
+              <p className="text-lg font-bold uppercase text-pretty">{item.companyName}</p>
               <p>
                 {item.position} - {item.type}
               </p>
@@ -114,10 +104,10 @@ export default function page() {
           {education.map((item, index) => (
             <div
               key={index}
-              className="text-xs md:text-sm lg:text-base"
+              className="text-sm lg:text-base"
             >
               <span>{item.timeline}</span>
-              <p className="font-bold uppercase text-pretty">{item.institute}</p>
+              <p className="text-lg font-bold uppercase text-pretty">{item.institute}</p>
               <p className="ordinal">{item.degree}</p>
             </div>
           ))}
@@ -131,16 +121,16 @@ export default function page() {
           {certifications.map((item, index) => (
             <div
               key={index}
-              className="text-xs md:text-sm lg:text-base"
+              className="text-sm lg:text-base"
             >
               <span>Issued {item.issued}</span>
-              <p className="font-bold uppercase text-pretty">{item.title}</p>
+              <p className="text-lg font-bold uppercase text-pretty">{item.title}</p>
               <Link
                 isExternal
                 showAnchorIcon
                 href={item.credentialURL}
                 color="foreground"
-                className="text-xs md:text-sm lg:text-base"
+                className="text-sm lg:text-base"
               >
                 {item.provider}
               </Link>

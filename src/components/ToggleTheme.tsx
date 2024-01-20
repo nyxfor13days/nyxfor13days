@@ -24,11 +24,15 @@ export default function ToggleTheme() {
   return (
     <Button
       isIconOnly
-      size="sm"
+      title="switch-theme"
+      aria-label={theme}
+      aria-labelledby="switch-theme"
+      role="button"
       variant="light"
       onClick={handleTheme}
     >
       {theme === "dark" ? <MoonIcon className="icon" /> : <SunIcon className="icon" />}
+      <span className="sr-only">{theme}</span>
     </Button>
   );
 }
