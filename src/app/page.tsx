@@ -1,3 +1,55 @@
+import Link from "next/link";
+
+import { Button } from "@nextui-org/button";
+
 export default function Home() {
-  return <main>page</main>;
+  return (
+    <main className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 space-y-6 w-full md:max-w-4xl">
+      <h2 className="text-3xl lg:text-5xl">
+        A fullstack engineer focusing on accessible interfaces and experiences for the user.
+      </h2>
+
+      <p>
+        Working remotely from{" "}
+        <Link
+          target="_blank"
+          href="https://maps.app.goo.gl/2rPBFUCxYBqC9FTq5"
+          className="hover:text-foreground/75 transition-colors"
+        >
+          Punjab, India
+        </Link>
+        .
+      </p>
+
+      <div className="flex items-center gap-4">
+        <Link href="/cv">
+          <Button
+            size="sm"
+            variant="solid"
+            color="primary"
+          >
+            CV
+          </Button>
+        </Link>
+        <Link href="/about">
+          <Button
+            size="sm"
+            variant="solid"
+            color="primary"
+          >
+            About Me
+          </Button>
+        </Link>
+        <Link href="/contact">
+          <Button
+            size="sm"
+            variant="solid"
+            color="primary"
+          >
+            Contact
+          </Button>
+        </Link>
+      </div>
+    </main>
+  );
 }
