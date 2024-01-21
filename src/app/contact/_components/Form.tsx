@@ -4,6 +4,7 @@ import { useState } from "react";
 import { z } from "zod";
 
 import { FormData, sendMessage } from "@/app/actions";
+import { useToast } from "@/lib/hooks/useToast";
 import { useSetState } from "@mantine/hooks";
 import { Button, Input, Textarea } from "@nextui-org/react";
 
@@ -15,9 +16,15 @@ const schema = z.object({
 });
 
 export default function Form() {
-  const [inputs, setInputs] = useSetState<FormData>({});
+  const [inputs, setInputs] = useSetState<FormData>({
+    email: "",
+    name: "",
+    message: "",
+  });
   const [errors, setErrors] = useState<Record<string, string[]>>({});
   const [loading, setLoading] = useState<boolean>(false);
+
+  const { toast } = useToast();
 
   async function handleSubmit(event: React.FormEvent) {
     event.preventDefault(); // Prevent form from submitting normally
@@ -26,12 +33,27 @@ export default function Form() {
     const validatedFields = schema.safeParse(inputs);
     if (!validatedFields.success) {
       setErrors(validatedFields.error.flatten().fieldErrors);
+
+      toast({
+        variant: "danger",
+        title: "Error",
+        description: "Please enter all the fields correctly!",
+      });
+
       setLoading(false);
+
       return; // Don't proceed if validation fails
     }
 
     try {
       const res = await sendMessage(inputs).then((res) => res);
+
+      toast({
+        variant: "success",
+        title: "Success",
+        description: "Thank you for contacting us.",
+      });
+
       console.log(res);
     } catch (error) {
       console.error(error);
