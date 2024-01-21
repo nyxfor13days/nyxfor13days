@@ -8,5 +8,5 @@ export interface FormData {
 }
 
 export async function sendMessage(inputs: FormData) {
-  console.log(inputs);
+  return inputs;
 }
