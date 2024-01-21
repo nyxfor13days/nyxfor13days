@@ -53,8 +53,6 @@ export default function Form() {
         title: "Success",
         description: "Thank you for contacting us.",
       });
-
-      console.log(res);
     } catch (error) {
       console.error(error);
       // Handle error here, e.g. show an error message
