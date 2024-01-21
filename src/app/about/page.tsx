@@ -1,8 +1,8 @@
 import SectionWrapper from "@/components/SectionWrapper";
 import { Link } from "@nextui-org/link";
 
+import Sidebar from "../../components/Sidebar";
 import Education from "./_components/Education";
-import Sidebar from "./_components/Sidebar";
 import WorkExperience from "./_components/WorkExperience";
 
 export default function page() {

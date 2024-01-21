@@ -1,6 +1,6 @@
 import { Button } from "@nextui-org/button";
 import { Link } from "@nextui-org/link";
-import { GitHubLogoIcon, InstagramLogoIcon, LinkedInLogoIcon } from "@radix-ui/react-icons";
+import { GitHubLogoIcon, InstagramLogoIcon, LinkedInLogoIcon, TwitterLogoIcon } from "@radix-ui/react-icons";
 
 export default function SocialButtons() {
   return (
@@ -56,6 +56,23 @@ export default function SocialButtons() {
         >
           <InstagramLogoIcon className="icon" />
           <span className="sr-only">Instagram</span>
+        </Button>
+      </Link>
+
+      <Link
+        isExternal
+        href="https://x.com/nyxfor13days"
+      >
+        <Button
+          isIconOnly
+          title="social-media-buttons"
+          aria-label="social-media"
+          aria-labelledby="social-media-buttons"
+          role="button"
+          size="sm"
+          color="primary"
+        >
+          <TwitterLogoIcon className="icon" />
         </Button>
       </Link>
     </div>
