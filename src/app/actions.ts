@@ -13,7 +13,6 @@ export async function sendMessage(inputs: FormData) {
   const { data, error } = await supabase.from("Responses").insert([inputs]).select();
 
   if (error) {
-    console.log(error);
     return error;
   }
 
