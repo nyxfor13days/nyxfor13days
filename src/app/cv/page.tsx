@@ -5,14 +5,13 @@ import { Divider } from "@nextui-org/divider";
 import { Link } from "@nextui-org/link";
 import { DotFilledIcon } from "@radix-ui/react-icons";
 
+import Title from "./_content/title.mdx";
+
 export default function page() {
   return (
     <main className="space-y-12">
       <section className="max-w-4xl space-y-4">
-        <p className="text-5xl font-bold lowercase">
-          UX Designer, Fullstack Developer, Researcher, Strategist and Entrepreneur.
-        </p>
-
+        <Title />
         <SocialButtons />
       </section>
 
